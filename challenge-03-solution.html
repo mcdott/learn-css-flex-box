@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Flex Box Challenge 3 Solution</title>
     <style>
       /* Your styles here */
 
-      body, html {
+      body,
+      html {
         /* make the page full height of window */
         height: 100%;
       }
@@ -33,26 +34,27 @@
       }
 
       /* Some general styles */
-      input, textarea {
+      input,
+      textarea {
         font-size: 1em;
         padding: 0.75em;
       }
-      
+
       /* File upload styles */
 
-      input[type=file] {
+      input[type="file"] {
         /* File is special we'll hide it's input */
         display: none;
       }
 
-      label[for=input-file] {
+      label[for="input-file"] {
         /* Make this label look like a button */
         border: 1px solid;
         padding: 1em;
         border-radius: 0.25em;
         text-align: center;
       }
-      
+
       textarea {
         box-sizing: border-box;
         width: 100%;
@@ -74,22 +76,26 @@
 
       /* Style input type text, email, password, datetime, number */
       /* Use padding, border, margin, and border radius */
-      input[type=text], input[type=email], input[type=date], input[type=number] {
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      input[type="number"] {
         border: 1px solid #666;
         margin: 1em 0;
-        border-radius: 0.25em;;
+        border-radius: 0.25em;
       }
 
       /* Style the inputs type radio, checkbox, file */
-      input[type=radio], input[type=checkbox], input[type=file] {
-        
+      input[type="radio"],
+      input[type="checkbox"],
+      input[type="file"] {
       }
 
       input > span {
         margin: 0 0 0 1em;
       }
 
-      button[type=submit] {
+      button[type="submit"] {
         padding: 1em;
         background-color: #f82;
         border: none;
@@ -110,31 +116,28 @@
   </head>
   <body>
     <form action="#" method="post">
-    
       <section>
         <label>
           <span>Name</span>
-          <input name="name" type="text" placeholder="Your name">
+          <input name="name" type="text" placeholder="Your name" />
         </label>
-        
+
         <label>
           <span>Email</span>
-          <input name="email" type="email" placeholder="email">
+          <input name="email" type="email" placeholder="email" />
         </label>
-        
-        
+
         <label>
           <span>Pet Count</span>
-          <input name="pets" type="number" placeholder="# of pets">
+          <input name="pets" type="number" placeholder="# of pets" />
         </label>
-        
-        
+
         <label>
           <span>Birthday</span>
-          <input name="birthday" type="date" placeholder="birthday">
+          <input name="birthday" type="date" placeholder="birthday" />
         </label>
       </section>
-      
+
       <section>
         <label class="h" for="radio-admin">
           <span>Prefix</span>
@@ -149,18 +152,18 @@
           </select>
         </label>
       </section>
-      
+
       <section>
         <label class="h" for="radio-admin">
-          <input id="radio-admin" type="radio" name="role" value="Admin"/>
+          <input id="radio-admin" type="radio" name="role" value="Admin" />
           <span>Admin</span>
         </label>
-        
+
         <label class="h">
           <input type="radio" name="role" value="Editor" />
-        <span>Editor</span>
+          <span>Editor</span>
         </label>
-        
+
         <label class="h">
           <input type="radio" name="role" value="Contributor" />
           <span>Contributor</span>
@@ -168,26 +171,25 @@
       </section>
       <section>
         <label class="h">
-          <input type="checkbox" name="public">
+          <input type="checkbox" name="public" />
           <span>Public Bio</span>
         </label>
       </section>
-      
+
       <section>
         <textarea name="bio"></textarea>
       </section>
-        
+
       <section>
         <label for="input-file">
-          <input name="image" type="file" id="input-file">
+          <input name="image" type="file" id="input-file" />
           Upload Image
         </label>
       </section>
-      
+
       <section>
         <button type="submit">Submit</button>
       </section>
-      
     </form>
   </body>
 </html>
